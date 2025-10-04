@@ -23,7 +23,7 @@ if game.PlaceId == 17890861313 then
         Callback = function(state)
             _G.ESP = state
             if state then
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/Bant3r241/CornerESP/refs/heads/main/ESP.lua"))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Bant3r241/chams/refs/heads/main/ESP.lua"))()
             end
         end
     })
