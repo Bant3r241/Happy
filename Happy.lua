@@ -11,7 +11,7 @@ if game.PlaceId == 17890861313 then
 
     local MiscTab = Window:MakeTab({
         Name = "Misc",
-        Icon = "rbxassetid://4299432428", -- You can change this icon if you'd like
+        Icon = "rbxassetid://4299432428",
         PremiumOnly = false
     })
 
@@ -22,9 +22,8 @@ if game.PlaceId == 17890861313 then
         Default = false,
         Callback = function(state)
             _G.ESP = state
-            if state then
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/Bant3r241/chams/refs/heads/main/ESP.lua"))()
-            end
+            -- now load the ESP script each time; it will check _G.ESP
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Bant3r241/chams/refs/heads/main/ESP.lua"))()
         end
     })
 
